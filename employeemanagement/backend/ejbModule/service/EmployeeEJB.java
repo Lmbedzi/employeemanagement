@@ -30,4 +30,9 @@ public class EmployeeEJB {
     	System.out.println("============================");
     }
 
+	public void viewAll(EmployeeEntity employeeEntity) {
+		em.persist(employeeEntity);
+	}
+    
+
 }
