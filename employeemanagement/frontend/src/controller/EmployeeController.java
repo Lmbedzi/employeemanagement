@@ -29,6 +29,7 @@ public class EmployeeController{
     }
  
    public String viewEmployee(){
+	   employeeEJB.viewAll(employee.getEntity());
         return "employeeList.xhtml";
     }
    
